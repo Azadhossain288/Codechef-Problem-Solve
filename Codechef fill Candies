@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int N,K,M,P,Q,R;
+        scanf("%d %d %d",&N,&K,&M);
+        P=K*M;
+        Q=N/P;
+        R=N%P;
+        if(R==0)
+            printf("%d\n",Q);
+        else
+            printf("%d\n",Q+1);
+
+    }
+    return 0;
+}
